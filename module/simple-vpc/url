@@ -1,2 +1,2 @@
 https://github.com/terraform-aws-modules/terraform-aws-vpc/tree/v2.21.0/examples/simple-vpc
-See ../learn-terraform-modules/.terrafofm/modules/vpc/simple-vpc
+See ../learn-terraform-modules/.terrafofm/modules/vpc/examples/simple-vpc

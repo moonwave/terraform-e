@@ -9,6 +9,7 @@ $ terraform console
 > aws_instance.web.*
 
 $ echo "aws_instance.web.public_ip" | terraform console 
+
 variable "animal" {
     type = "string"
     default = "dog"
@@ -30,7 +31,7 @@ Top level keywords
     provider    module  variable    data    resource
     terraform   output  locals (local values)
 
-terraform init - to install new terraform providers annd modules
+terraform init - to install new terraform providers and modules
 
 public module registry:
     https://registry.terraform.io/
