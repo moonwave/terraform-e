@@ -34,7 +34,7 @@ Retrieved token for user jonathanluo
    New to TFC? Follow these steps to instantly apply an example configuration:
 
    $ git clone https://github.com/hashicorp/tfc-getting-started.git
-   $ cd tfc-getting-started
+   $ cd terraform/tfc/tfc-getting-started
    $ scripts/setup.sh
 
 $ ls -l /home/moonwave/.terraform.d
