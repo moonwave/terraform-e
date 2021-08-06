@@ -1,5 +1,5 @@
-[Store Remote State](https://learn.hashicorp.com/tutorials/terraform/aws-remote?in=terraform/aws-get-started)  
-[Account at terraform](https://app.terraform.io/app/moonwave/workspaces/moonwave-apps/runs)
+[Store Remote State](https://learn.hashicorp.com/tutorials/terraform/aws-remote?in=terraform/aws-get-started)
+[Create an account at terraform](https://app.terraform.io/app/moonwave/workspaces/moonwave-apps/runs)
 ```text
 update main.tf with the following backend "remote" contents: 
 terraform {
@@ -26,23 +26,10 @@ for use by subsequent commands:
 Retrieved token for user jonathanluo
 
 ---------------------------------------------------------------------------------
-
-                                          -                                
-                                          -----                           -
-                                          ---------                      --
-                                          ---------  -                -----
-                                           ---------  ------        -------
-                                             -------  ---------  ----------
-                                                ----  ---------- ----------
                                                   --  ---------- ----------
    Welcome to Terraform Cloud!                     -  ---------- -------
                                                       ---  ----- ---
    Documentation: terraform.io/docs/cloud             --------   -
-                                                      ----------
-                                                      ----------
-                                                       ---------
-                                                           -----
-                                                               -
 
    New to TFC? Follow these steps to instantly apply an example configuration:
 
@@ -50,7 +37,7 @@ Retrieved token for user jonathanluo
    $ cd tfc-getting-started
    $ scripts/setup.sh
 
-/home/moonwave/.terraform.d $ ls -l
+$ ls -l /home/moonwave/.terraform.d
 total 12
 -rw-rw-r-- 1 moonwave moonwave 311 Jul 29 12:43 checkpoint_cache
 -rw-r--r-- 1 moonwave moonwave 394 Feb  7 22:39 checkpoint_signature
@@ -74,7 +61,7 @@ Do you want to copy existing state to the new backend?
   backend? Enter "yes" to copy and "no" to start with an empty state.
 
   Enter a value: yes
-  # manually unlock workspace in browser at 
+  # manually unlock workspace in browser if cli failed at 
   # https://app.terraform.io/app/moonwave/workspaces/moonwave-apps/settings/lock 
 
 Successfully configured the backend "remote"! Terraform will automatically
@@ -86,12 +73,11 @@ Initializing provider plugins...
 
 Terraform has been successfully initialized!
 
-
-
 Now that Terraform has migrated the state file to Terraform Cloud, delete the local state file.
 $ rm terraform.tfstate
 
-Add two environment variables AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY in the "Environment Variables" section
+Add two environment variables AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY and their values (from ~/.aws/credentials) 
+in the "Environment Variables" section
 https://app.terraform.io/app/moonwave/workspaces/moonwave-apps/variables
 
 $ export AWS_ACCESS_KEY_ID=AKI...       # see ~/.aws/credentials
@@ -102,4 +88,6 @@ $ terraform apply
 when done
 $ terraform destroy
 ```
-
+![terraform-tokens](./terraform-tokens.png)
+![terraform-remote-state](./terraform-remote-state.png)
+![terraform-workspace-variables](./terraform-workspace-variables.png)

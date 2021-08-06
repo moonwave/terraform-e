@@ -34,6 +34,7 @@ Input Variables - serve as parameters for a Terraform module, so users can custo
 Output Values   - are like return values for a Terraform module.
 Local Values    - are a convenience feature for assigning a short name to an expression.
 ```
+###[Settings - S3 with locking via DynamoDB](https://www.terraform.io/docs/language/settings/backends/s3.html)
 
 resource calling
 Calling a module 
