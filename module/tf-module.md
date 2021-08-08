@@ -1,7 +1,11 @@
 ###[Terraform Module](https://learn.hashicorp.com/collections/terraform/modules)
 ###[Modules Overview](https://learn.hashicorp.com/tutorials/terraform/module?in=terraform/modules)
+###[Use Modules from the Registry](https://learn.hashicorp.com/tutorials/terraform/module-use?in=terraform/modules)
+###[Build and Use a Local Module](https://learn.hashicorp.com/tutorials/terraform/module-create?in=terraform/modules)
 ####[terraform-aws-modules/vpc](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/2.21.0)
 ###[Use Modules from the Registry](https://learn.hashicorp.com/tutorials/terraform/module-use?in=terraform/modules)
+
+Use Modules from the Registry
 ```text
 $ git clone https://github.com/hashicorp/learn-terraform-modules-use.git
 $ cd learn-terraform-modules
