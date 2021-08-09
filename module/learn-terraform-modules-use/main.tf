@@ -13,6 +13,7 @@ provider "aws" {
 }
 
 module "vpc" {
+  # https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/2.21.0?tab=inputs
   source  = "terraform-aws-modules/vpc/aws"
   version = "2.21.0"
 
@@ -29,6 +30,7 @@ module "vpc" {
 }
 
 module "ec2_instances" {
+  # https://registry.terraform.io/modules/terraform-aws-modules/ec2-instance/aws/2.12.0?tab=inputs
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "2.12.0"
 

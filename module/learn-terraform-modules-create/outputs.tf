@@ -1,4 +1,5 @@
 # Output variable definitions
+# https://learn.hashicorp.com/tutorials/terraform/module-create?in=terraform/modules#define-outputs
 
 output "vpc_public_subnets" {
   description = "IDs of the VPC's public subnets"

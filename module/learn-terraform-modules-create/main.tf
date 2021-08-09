@@ -1,5 +1,13 @@
 # Terraform configuration
 
+#terraform {    # auto-configured by default
+#  required_providers {
+#    aws = {
+#      source = "hashicorp/aws"
+#    }
+#  }
+#}
+
 provider "aws" {
   region = "us-west-2"
 }
@@ -39,9 +47,13 @@ module "ec2_instances" {
 }
 
 module "website_s3_bucket" {
+  # local module under ./module
   source = "./modules/aws-s3-static-website-bucket"
 
-  bucket_name = "robin-test-dec-17-2019"
+  # bucket_name and tags are variables defined in child module aws-s3-static-website-bucket
+  # set variable values here and passing argument to child module aws-s3-static-website-bucket
+
+  bucket_name = "mw-test-aug-08-2021"
 
   tags = {
     Terraform   = "true"

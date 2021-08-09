@@ -1,4 +1,6 @@
 # Output variable definitions
+# A module's outputs can be accessed as read-only attributes on the module object, which is available within the
+# configuration that calls the module. You can reference these outputs in expressions as module.<MODULE NAME>.<OUTPUT NAME>.
 
 output "arn" {
   description = "ARN of the bucket"
