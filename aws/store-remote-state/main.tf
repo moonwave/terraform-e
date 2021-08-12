@@ -1,4 +1,6 @@
 # https://learn.hashicorp.com/tutorials/terraform/aws-remote?in=terraform/aws-get-started
+# see ../s3/backend.tf
+
 terraform {
   backend "remote" { # https://app.terraform.io/app/moonwave/workspaces/moonwave-apps/runs
     # hostname = "moonwave.org" # if hosted at moonwave.org

@@ -1,1 +1,5 @@
 ###[Backends S3](https://www.terraform.io/docs/language/settings/backends/s3.html)
+![dynamodb-1](./images/dynamodb-1.png)
+![dynamodb-2](./images/dynamodb-2.png)
+![s3-backend-1](./images/s3-backend-1.png)
+![s3-backend-2](./images/s3-backend-2.png)
