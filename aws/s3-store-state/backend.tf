@@ -5,7 +5,7 @@ terraform {
     backend "s3" {
         encrypt = true
         bucket = "terramw-state"
-        key    = "dev/vpc/terraform.tfstate"
+        key    = "dev/mw-vpc/terraform.tfstate"
         region = "us-west-2"
         dynamodb_table = "terraform-locks-dev"
         # table name: terraform-locks-dev, primary key: LockID
@@ -24,10 +24,10 @@ terraform {
 #    }
 #}
 
-provider "aws" {
-    region = "us-west-2"
-    version = "~> 2.17"
-}
+#provider "aws" {
+#    region = var.region
+#    version = "~> 2.17"
+#}
 
 resource "null_resource" "output_trigger" {
     triggers = {
