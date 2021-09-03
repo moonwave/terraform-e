@@ -1,0 +1,3 @@
+https://github.com/hashicorp/field-workshops-consul.git
+https://github.com/hashicorp/field-workshops-consul/tree/master/instruqt-tracks/multi-cloud-service-networking-with-consul
+https://github.com/rptcloud/terraform_training
